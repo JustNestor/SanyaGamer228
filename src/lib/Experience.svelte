@@ -3,7 +3,7 @@
 </script>
 
 <div class="mt-6">
-	<h2 class="text-xl font-bold mb-4">Experience</h2>
+	<h2 class="text-xl font-bold mb-4">Досвід</h2>
 
 	{#each experiences as exp}
 		<div class="mb-6">
