@@ -34,12 +34,12 @@
 	<div class="container mx-auto py-8">
 		<div class="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
 			<div class="col-span-4 sm:col-span-3">
-				<Sidebar name="John Doe" title="Software Developer" {skills} />
+				<Sidebar name="John Doe" title="Студент" {skills} />
 			</div>
 
 			<div class="col-span-4 sm:col-span-9">
 				<div class="bg-white shadow rounded-lg p-6">
-					<AboutMe title="About Me">
+					<AboutMe title="Про мене">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Sed finibus est vitae tortor ullamcorper, ut
