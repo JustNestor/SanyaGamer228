@@ -4,28 +4,31 @@
 	import Experience from "./lib/Experience.svelte";
 
 	const skills = [
-		"JavaScript",
-		"React",
-		"Node.js",
-		"HTML/CSS",
+		"Rust",
+		"Linux",
+		"Vulkan",
+		"Solana",
+		"HTML/CSS/TS",
+		"Svelte",
 		"Tailwind CSS",
+		"Python",
 	];
 
 	const experiences = [
 		{
-			label: "Web Developer",
+			label: "Вивчення Vulkan",
 			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus est vitae tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas suscipit.",
+				"Почав вивчати Vulkan з ціллю створити свій ігровий двигун та гру на ньому. Для досягнення цієї цілі почав створення бібілотеки на Rust, яка ставить за мету абстрагувати Vulkan та зробити його використання більш приємним.",
 		},
 		{
-			label: "Open Source Project",
+			label: "Вивчення Solana",
 			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus est vitae tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas suscipit.",
+				"Проходжу інтенсив Solana StartUp Terminal, який навчає, як розробляти рішення під блокчейн Solana.",
 		},
 		{
-			label: "Computer Science Degree",
+			label: "Розробка сайту нового факультету",
 			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus est vitae tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas suscipit.",
+				"Відповідаю за створення системи для пошуку файлів на базі RAG.",
 		},
 	];
 </script>
@@ -34,21 +37,17 @@
 	<div class="container mx-auto py-8">
 		<div class="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
 			<div class="col-span-4 sm:col-span-3">
-				<Sidebar name="John Doe" title="Software Developer" {skills} />
+				<Sidebar name="Комарницький Нестор" title="Студент" {skills} />
 			</div>
 
 			<div class="col-span-4 sm:col-span-9">
 				<div class="bg-white shadow rounded-lg p-6">
-					<AboutMe title="About Me">
+					<AboutMe title="Про мене">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Sed finibus est vitae tortor ullamcorper, ut
-							vestibulum velit convallis. Aenean posuere risus non
-							velit egestas suscipit. Nunc finibus vel ante id
-							euismod. Vestibulum ante ipsum primis in faucibus
-							orci luctus et ultrices posuere cubilia Curae;
-							Aliquam erat volutpat. Nulla vulputate pharetra
-							tellus, in luctus risus rhoncus id.
+							Живу у Львові і навчаюсь в ЛНУ ім. Івана Франка на
+							факультеті електроніки та комп'ютерних технологій.
+							Обожнюю читати та вивчати складні та водночас цікаві
+							технології. Фанат Arch Linux та Rust.
 						</p>
 					</AboutMe>
 
