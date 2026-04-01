@@ -27,7 +27,7 @@
 	<div class="container mx-auto py-8">
 		<div class="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
 			<div class="col-span-4 sm:col-span-3">
-				<Sidebar name="John Doe" title="Студент" {skills} />
+				<Sidebar name="Євген Пелих" title="Студент" {skills} />
 			</div>
 
 			<div class="col-span-4 sm:col-span-9">
