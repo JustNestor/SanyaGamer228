@@ -1,0 +1,40 @@
+name: Check Index and Update README
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-and-commit:
+    runs-on: ubuntu-latest
+    
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v4
+
+      - name: Run check script
+        run: |
+          chmod +x check_index.sh
+          ./check_index.sh
+
+      - name: Update README in main branch
+        if: success() 
+        run: |
+       
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+
+          git fetch origin main
+          git checkout main
+          
+
+          echo "Гілка: ${{ github.ref_name }} | index.html знайдено ✅" >> README.md
+          
+ 
+          git add README.md
+          git commit -m "Update README: index.html check passed"
+          git push origin main
